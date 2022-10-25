@@ -62,7 +62,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1.5em 0;
+  margin: 1.3em 0;
 }
 .box .rating-card__score-grade {
   display: flex;
@@ -113,6 +113,13 @@ body {
   background-color: hsl(210deg, 19%, 21%);
   border-radius: 1em;
   color: hsl(25deg, 97%, 53%);
+}
+.box .rating-card .error {
+  visibility: hidden;
+  margin-top: 0.5em;
+  font-size: 1.2rem;
+  color: hsl(25deg, 97%, 53%);
+  text-align: center;
 }
 
 .attribution {
