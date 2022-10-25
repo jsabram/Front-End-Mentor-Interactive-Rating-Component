@@ -123,12 +123,15 @@ body {
 }
 
 .attribution {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 1em;
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: hsl(25deg, 97%, 53%);
 }
 
 @media (min-width: 768px) {
