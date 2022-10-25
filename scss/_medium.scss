@@ -1,0 +1,18 @@
+@media (min-width: 768px) {
+	.box {
+		.rating-card {
+			&__star {
+				height: 50px;
+				width: 50px;
+			}
+
+			&__score {
+				margin: 1.5em 0;
+				&-grade {
+					width: 50px;
+					height: 50px;
+				}
+			}
+		}
+	}
+}

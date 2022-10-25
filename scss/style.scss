@@ -1,0 +1,144 @@
+@import '_colors';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	padding: 1em;
+	background-color: $very-dark-blue;
+	font-size: 1.5rem;
+	font-family: 'Overpass', sans-serif;
+}
+
+.box {
+	width: 100%;
+	max-width: 420px;
+	height: 390px;
+	padding: 2em 1.8em;
+	background-image: linear-gradient(to bottom, $dark-blue, $the-darkest-blue);
+	border-radius: 2em;
+
+	.rating-card {
+		&--two {
+			display: none;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			height: 100%;
+		}
+
+		&__star {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 45px;
+			width: 45px;
+			background-color: $light-blue;
+			border-radius: 50%;
+		}
+
+		&__title {
+			color: $white;
+			margin: 1em 0 0.5em;
+		}
+
+		&__text {
+			color: $light-grey;
+			line-height: 1.5;
+
+			&--two {
+				text-align: center;
+				margin: 0 2em;
+			}
+		}
+
+		&__score {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 1.5em 0;
+
+			&-grade {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 45px;
+				height: 45px;
+				background-color: $light-blue;
+				border-radius: 50%;
+				color: $light-grey;
+				cursor: pointer;
+				transition: background-color 0.3s, color 0.3s;
+
+				&:hover {
+					background-color: $light-grey;
+					color: $white;
+				}
+			}
+
+			.grade-active {
+				background-color: $orange;
+				color: $white;
+			}
+		}
+
+		&__btn {
+			width: 100%;
+			padding: 1em;
+			background-color: $orange;
+			outline: none;
+			border: 1px solid $orange;
+			border-radius: 3rem;
+			font-size: 1.5rem;
+			font-family: 'Overpass', sans-serif;
+			color: $white;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			cursor: pointer;
+			transition: background-color 0.3s, border 0.3s, color 0.3s;
+
+			&:hover,
+			&:focus {
+				background-color: $white;
+				border: 1px solid $white;
+				color: $orange;
+			}
+		}
+
+		&__img {
+			margin-bottom: 2em;
+		}
+
+		&__info {
+			padding: 0.5em 1em;
+			background-color: $light-blue;
+			border-radius: 1em;
+			color: $orange;
+		}
+	}
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@import '_medium';
