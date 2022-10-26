@@ -123,14 +123,19 @@ body {
 }
 
 .attribution {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   margin-bottom: 1em;
   font-size: 11px;
+  color: hsl(217deg, 12%, 63%);
   text-align: center;
 }
 
 .attribution a {
+  color: hsl(0deg, 0%, 100%);
+  transition: color 0.3s;
+}
+.attribution a:hover {
   color: hsl(25deg, 97%, 53%);
 }
 

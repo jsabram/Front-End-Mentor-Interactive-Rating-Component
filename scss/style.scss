@@ -142,14 +142,20 @@ body {
 }
 
 .attribution {
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 	margin-bottom: 1em;
 	font-size: 11px;
+	color: $light-grey;
 	text-align: center;
 }
 .attribution a {
-	color: $orange;
+	color: $white;
+	transition: color 0.3s;
+
+	&:hover {
+		color: $orange;
+	}
 }
 
 @import '_medium';
